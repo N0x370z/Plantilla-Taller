@@ -1,0 +1,181 @@
+/* ─────────────────────────────────────────────────────────────
+   Estilos custom — Taller Template
+   Complementan Tailwind con detalles tipográficos finos.
+   ───────────────────────────────────────────────────────────── */
+
+/* Fraunces con configuración variable para optical sizing */
+.font-display {
+    font-variation-settings: "opsz" 144, "SOFT" 50;
+    letter-spacing: -0.02em;
+}
+
+/* Headings grandes ajustados */
+h1.display, h2.display {
+    line-height: 1;
+    font-feature-settings: "ss01" 1, "ss02" 1;
+}
+
+/* Cursor refinado sobre links del nav */
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Subrayado animado bonito para links inline en texto */
+.link-underline {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 0 1px;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    transition: background-size 0.3s ease;
+}
+.link-underline:hover {
+    background-size: 100% 1px;
+}
+
+/* Animación de entrada para hero */
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+.fade-up      { animation: fadeUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) both; will-change: opacity, transform; }
+.fade-up-2    { animation: fadeUp 0.8s 0.15s cubic-bezier(0.22, 1, 0.36, 1) both; will-change: opacity, transform; }
+.fade-up-3    { animation: fadeUp 0.8s 0.30s cubic-bezier(0.22, 1, 0.36, 1) both; will-change: opacity, transform; }
+.fade-up-4    { animation: fadeUp 0.8s 0.45s cubic-bezier(0.22, 1, 0.36, 1) both; will-change: opacity, transform; }
+
+/* Respetar preferencia de movimiento reducido */
+@media (prefers-reduced-motion: reduce) {
+    .fade-up, .fade-up-2, .fade-up-3, .fade-up-4 {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
+    .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+
+/* Aparecer al hacer scroll (vía IntersectionObserver) */
+.reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+                transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Hover sutil sobre las tarjetas de obras */
+.work-card {
+    transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.work-card:hover .work-image img {
+    transform: scale(1.04);
+}
+.work-image img {
+    transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Grano sutil de papel para textura */
+.paper-texture {
+    position: relative;
+}
+.paper-texture::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.4;
+    z-index: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+.paper-texture > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Inputs de formulario */
+.form-input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #E5DFD4;
+    padding: 12px 0;
+    color: #1F1D1A;
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px;
+    transition: border-color 0.2s ease;
+}
+.form-input:focus {
+    outline: none;
+    border-bottom-color: #5C6B5B;
+}
+.form-input::placeholder {
+    color: #B8B0A5;
+}
+textarea.form-input {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Botones */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.85rem 1.75rem;
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    border-radius: 0;
+    transition: all 0.25s ease;
+    cursor: pointer;
+    text-decoration: none;
+    border: 1px solid transparent;
+}
+.btn-primary {
+    background: #1F1D1A;
+    color: #F4F1EB;
+}
+.btn-primary:hover {
+    background: #5C6B5B;
+}
+.btn-outline {
+    background: transparent;
+    color: #1F1D1A;
+    border-color: #1F1D1A;
+}
+.btn-outline:hover {
+    background: #1F1D1A;
+    color: #F4F1EB;
+}
+
+/* Imagen de obra con aspect ratio mantenido */
+.aspect-work {
+    aspect-ratio: 4 / 5;
+    background: #EAE3D5;
+    overflow: hidden;
+}
+
+/* Mobile: el botón flotante de WhatsApp no se ve a la vez con el footer */
+@media (max-width: 640px) {
+    .fixed.bottom-6 {
+        bottom: 1rem;
+        right: 1rem;
+    }
+}
+
+/* Tipografía: bajitas mayúsculas y kerning */
+.eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: #5A574F;
+    font-weight: 500;
+}
