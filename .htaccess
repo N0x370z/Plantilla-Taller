@@ -1,0 +1,21 @@
+# Bloquear acceso directo a carpetas internas
+RewriteEngine On
+RewriteRule ^(includes|data|logs)/ - [F,L]
+
+# Bloquear archivos sensibles por nombre
+<FilesMatch "^(config\.php|.*\.json|.*\.log)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Headers de seguridad
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# Comprimir respuestas
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json
+</IfModule>

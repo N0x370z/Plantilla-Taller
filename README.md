@@ -22,7 +22,7 @@ Plantilla en PHP plano + Tailwind (vía CDN) diseñada para mostrar el trabajo d
 
 ## Requisitos del hosting
 
-- PHP 8.0 o superior (cualquier hosting compartido moderno lo tiene; 7.4 mínimo con ajuste menor)
+- PHP 8.0 o superior (cualquier hosting compartido moderno lo tiene)
 - Función `mail()` habilitada (estándar en Hostinger, GoDaddy, etc.)
 - Apache con `mod_rewrite` (estándar)
 - ~50 MB de espacio libre

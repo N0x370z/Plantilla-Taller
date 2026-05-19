@@ -48,7 +48,7 @@ include __DIR__ . '/includes/header.php';
 <section class="max-w-6xl mx-auto px-6 lg:px-10 pt-10 pb-14">
     <div class="grid lg:grid-cols-12 gap-8 lg:gap-12 items-end">
         <div class="lg:col-span-8">
-            <p class="font-mono text-[10px] tracking-[0.25em] text-warm uppercase">Obra <?= e(work_number($work['number'])) ?> · <?= e($work['year'] ?? '') ?></p>
+            <p class="font-mono text-[10px] tracking-[0.25em] text-warm uppercase">Obra <?= e(work_number($work['number'])) ?> · <?= e(format_date($work['year'] ?? '')) ?></p>
             <h1 class="display font-display text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-medium text-charcoal leading-[1.02] mt-4 fade-up">
                 <?= e($work['title']) ?>
             </h1>
@@ -135,7 +135,7 @@ include __DIR__ . '/includes/header.php';
                 <?php if (!empty($work['year'])): ?>
                 <div class="grid grid-cols-3 gap-4 pb-4 border-b border-border">
                     <dt class="font-mono text-[10px] uppercase tracking-widest text-stone pt-1">Año</dt>
-                    <dd class="col-span-2 text-charcoal-2"><?= e($work['year']) ?></dd>
+                    <dd class="col-span-2 text-charcoal-2"><?= e(format_date($work['year'])) ?></dd>
                 </div>
                 <?php endif; ?>
 
