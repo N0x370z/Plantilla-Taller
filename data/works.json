@@ -1,0 +1,97 @@
+[
+    {
+        "number": 47,
+        "slug": "mesa-comedor-roble-encargada",
+        "title": "Mesa de comedor en roble",
+        "category": "mesas",
+        "year": "2024",
+        "materials": "Roble macizo",
+        "dimensions": "240 × 100 × 76 cm",
+        "finish": "Aceite duro natural, acabado mate",
+        "client": "Encargo particular",
+        "description": "Mesa para ocho personas construida con piezas seleccionadas de roble macizo. Ensambles de espiga ciega en las patas y bisel suave en el contorno del tablero. El aceite natural realza la veta sin saturar el tono original de la madera.",
+        "images": [
+            "/images/works/47-mesa-roble-01.jpg",
+            "/images/works/47-mesa-roble-02.jpg",
+            "/images/works/47-mesa-roble-03.jpg"
+        ]
+    },
+    {
+        "number": 46,
+        "slug": "buro-noche-parota",
+        "title": "Burós de noche en parota",
+        "category": "recamaras",
+        "year": "2024",
+        "materials": "Parota mexicana",
+        "dimensions": "55 × 45 × 60 cm (par)",
+        "finish": "Cera de abeja, brillo suave",
+        "client": "Encargo particular",
+        "description": "Par de burós con un solo cajón de cola de milano y tirador integrado en la madera. La parota se trabajó respetando su veta cruzada característica.",
+        "images": [
+            "/images/works/46-buro-parota-01.jpg",
+            "/images/works/46-buro-parota-02.jpg"
+        ]
+    },
+    {
+        "number": 45,
+        "slug": "libreros-modulares-cedro",
+        "title": "Libreros modulares de piso a techo",
+        "category": "almacenamiento",
+        "year": "2024",
+        "materials": "Cedro rojo",
+        "dimensions": "180 × 35 × 280 cm",
+        "finish": "Barniz al agua, acabado satinado",
+        "client": "Encargo profesional",
+        "description": "Sistema de 12 módulos a medida del muro, anclados con discreción. Los entrepaños son ajustables. El cedro rojo se eligió por su densidad y porque su aroma natural se conserva años después.",
+        "images": [
+            "/images/works/45-libreros-cedro-01.jpg"
+        ]
+    },
+    {
+        "number": 44,
+        "slug": "sillas-comedor-pino-tejido",
+        "title": "Sillas de comedor con tejido natural",
+        "category": "sillas",
+        "year": "2023",
+        "materials": "Pino blanco, fibra de ixtle",
+        "dimensions": "45 × 45 × 92 cm (cada una)",
+        "finish": "Cera natural",
+        "client": "Set de 6 piezas",
+        "description": "Reinterpretación de la silla rural mexicana con proporciones más esbeltas. El tejido del asiento es ixtle natural torcido a mano por una artesana de Tepoztlán.",
+        "images": [
+            "/images/works/44-sillas-pino-01.jpg",
+            "/images/works/44-sillas-pino-02.jpg"
+        ]
+    },
+    {
+        "number": 43,
+        "slug": "escritorio-nogal-minimal",
+        "title": "Escritorio en nogal",
+        "category": "escritorios",
+        "year": "2023",
+        "materials": "Nogal americano",
+        "dimensions": "160 × 70 × 75 cm",
+        "finish": "Aceite tung",
+        "client": "Home office",
+        "description": "Escritorio de líneas limpias con un cajón oculto al frente y gestión interna de cables. La elección del nogal americano por su veta oscura y estabilidad dimensional.",
+        "images": [
+            "/images/works/43-escritorio-nogal-01.jpg"
+        ]
+    },
+    {
+        "number": 42,
+        "slug": "banco-entrada-encino",
+        "title": "Banco de entrada en encino",
+        "category": "varios",
+        "year": "2023",
+        "materials": "Encino blanco",
+        "dimensions": "120 × 35 × 48 cm",
+        "finish": "Acabado natural, sin pigmento",
+        "client": "Encargo particular",
+        "description": "Banco macizo para entrada con espacio inferior para guardar zapatos. Una sola pieza de encino para el asiento, sin uniones a lo largo. Las patas son ensambles de caja y espiga reforzados.",
+        "images": [
+            "/images/works/42-banco-encino-01.jpg",
+            "/images/works/42-banco-encino-02.jpg"
+        ]
+    }
+]
