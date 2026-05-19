@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /includes/
+Disallow: /data/
+Disallow: /logs/
+Disallow: /contact-handler.php
+Disallow: /assets/
+
+# ⚠️  Cambia esta URL por la de tu dominio real (también está en config.php → site.url)
+Sitemap: https://tallermendoza.mx/sitemap.php
